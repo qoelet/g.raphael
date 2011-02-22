@@ -46,6 +46,21 @@ Values are,
     
 Defaults to false. Use this to stack your bars instead of displaying them side by side.
 
+**gutter**
+
+Values given as a string, denoting %. E.g. "40%"
+
+Defaults to "20%". For horizontal barcharts, this is calculated as,
+
+    bargutter = Math.floor(barheight * gutter / 100)
+    
+e.g. if my height was 220, and I had 4 bars, then my barheight is calculated as,
+
+    Math.floor(height / (len * (100 + gutter) + gutter) * 100); // where len is 4 and height is 220, and if not specified, gutter is 20
+    
+then according to the above, my bargutter = 8px.
+    
+    
 ## Methods ##
 
 **1. .hover(fin, fout)** - fin/fout: **callbacks to trigger when mouse hovers in and out respectively over the bars.**
