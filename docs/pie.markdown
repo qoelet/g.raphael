@@ -144,3 +144,7 @@ When you iterate through each slice of the pie chart using .each(), the returned
 When you attach a hover event for example, using .hover(), g.raphael.js is essentially iterating through each slice, as it does in .each(), and passing the returned slice to the callbacks to be called, and setting the events to happen by binding mouseover and mouseout events to the covers.
 
 All of this is container within the 'chart' object, which is initialized and returned to you when you first call g.piechart.
+
+## Written by ##
+
+Kenny Shen, www.northpole.sg.

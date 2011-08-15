@@ -129,3 +129,7 @@ Attach click event to dotchart,
       });
     
 ## Others ##
+
+## Written by ##
+
+Kenny Shen, www.northpole.sg.

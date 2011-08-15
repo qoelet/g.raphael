@@ -153,3 +153,7 @@ There's two important internal methods that are used to create and return the ob
 	+ axis
 	
 .hoverColumn(), .clickColumn(), .eachColumn() create and return groupings of data 'dots'. Columns have similar properties to their atomic counterparts but are usually array of values. 
+
+## Written by ##
+
+Kenny Shen, www.northpole.sg.

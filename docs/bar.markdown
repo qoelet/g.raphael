@@ -98,3 +98,7 @@ Attach hover event to piechart,
 ## Others ##
 
 N/A
+
+## Written by ##
+
+Kenny Shen, www.northpole.sg.
