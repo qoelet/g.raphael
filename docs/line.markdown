@@ -5,7 +5,7 @@
  + raphael.js
  + g.raphael.js
  + g.line.js
- 
+
 ## Overview ##
 
 Creates a line chart.
@@ -68,7 +68,7 @@ Value - boolean. If omitted, false is assumed. If true, smoothing/rounding is ap
 
 **gutter**
 
-Value - number. If omitted, value of '10' is assigned. Think of this as a general padding value between the chart and the bounding box/container. 
+Value - number. If omitted, value of '10' is assigned. Think of this as a general padding value between the chart and the bounding box/container.
 
 
 ## Methods ##
@@ -83,31 +83,31 @@ Value - number. If omitted, value of '10' is assigned. Think of this as a genera
 
 
 	var f = function() {
-		
+
 		console.log(this.symbol);	// the symbol used to represent the data point on the line chart
 
 	}
-	
+
 **4. .hoverColumn(fin, fout)** - fin/fout: **callbacks to trigger when mouse hovers in and out respectively over the data columns.**
 
 **5. .clickColumn(f)** - f: **callback to trigger on click event.**
 
-**6. .hrefColumn(cols)** - _coming soon_
+**6. .hrefColumn(cols)** - cols: **an array of urls. it adds the link to the data point with respect to the order of cols**
 
 **7. .eachColumn(f)** - f: **callback applied to each iteration.**
 
 
 ## Usage ##
 
-Create a Raphael instance, 
+Create a Raphael instance,
 
 
     // bare bones
     var r = Raphael();
     // create at top left corner of #element
     var r = Raphael('line-chart');
-    
-    
+
+
 Create a line chart,
 
 
@@ -126,14 +126,14 @@ Attach hover event to linechart,
 	}, function() {
 		this.symbol.attr({'fill':'#444'});
 	});
-	
+
 
 Attach click event to linechart,
 
 
     // example
     r.g.linechart.click(function() {
-       alert("You clicked on the line chart!"); 
+       alert("You clicked on the line chart!");
     });
 
 
@@ -149,10 +149,10 @@ There's two important internal methods that are used to create and return the ob
 	+ line
 	+ shade
 	+ symbol
-	+ symbols 
+	+ symbols
 	+ axis
-	
-.hoverColumn(), .clickColumn(), .eachColumn() create and return groupings of data 'dots'. Columns have similar properties to their atomic counterparts but are usually array of values. 
+
+.hoverColumn(), .clickColumn(), .eachColumn() create and return groupings of data 'dots'. Columns have similar properties to their atomic counterparts but are usually array of values.
 
 ## Written by ##
 
